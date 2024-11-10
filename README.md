@@ -1,2 +1,2 @@
 # DEMETER
-demeter project
+this is Demeter
