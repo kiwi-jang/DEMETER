@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demeter Landing Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            width: 80%;
+            height: 60vh;
+        }
+        .section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.3s;
+            color: #fff;
+            font-size: 2rem;
+            text-align: center;
+            cursor: pointer;
+        }
+        .section-standard {
+            background-image: url('standard-image.jpg'); /* 'standard-image.jpg'를 원하는 이미지로 변경 */
+            background-size: cover;
+            background-position: center;
+        }
+        .section-signature {
+            background-image: url('signature-image.jpg'); /* 'signature-image.jpg'를 원하는 이미지로 변경 */
+            background-size: cover;
+            background-position: center;
+        }
+        .section-standard:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .section-signature:hover {
+            background-color: rgba(255, 215, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section section-standard" onclick="location.href='standard.html'">
+            Demeter Standard
+        </div>
+        <div class="section section-signature" onclick="location.href='signature.html'">
+            Demeter Signature
+        </div>
+    </div>
+</body>
+</html>
