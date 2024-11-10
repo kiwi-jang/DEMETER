@@ -40,21 +40,31 @@
             background-size: cover;
             background-position: center;
         }
+        .logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100px;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+        .logo:hover {
+            transform: translate(-50%, -50%) scale(1.1); 
+        }
         .section-standard:hover {
-            background-color: rgba(0, 0, 0, 0.5);
         }
         .section-signature:hover {
-            background-color: rgba(255, 215, 0, 0.5);
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="section section-standard" onclick="location.href='standard.html'">
-            Demeter Standard
+            <img src="logo_std.png" alt="Logo" class="logo">
         </div>
         <div class="section section-signature" onclick="location.href='signature.html'">
-            Demeter Signature
+            <img src="logo_sig.png" alt="Logo" class="logo">
         </div>
     </div>
 </body>
