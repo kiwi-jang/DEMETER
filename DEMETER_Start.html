@@ -12,48 +12,48 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-        }
+            font-family: Arial, sans-serif;
         }
         .container {
             display: flex;
-            width: 100%;
-            height: 100%;
+            width: 80%;
+            height: 60vh;
         }
         .section {
             flex: 1;
             display: flex;
             justify-content: center;
             align-items: center;
-            transition: background-color 0.5s;
+            transition: background-color 0.3s;
             color: #fff;
             font-size: 2rem;
             text-align: center;
             cursor: pointer;
         }
-        .standard {
+        .section-standard {
             background-image: url('Demeter_stendard_Food.png');
             background-size: cover;
             background-position: center;
         }
-        .signature {
+        .section-signature {
             background-image: url('Demeter_signature_Food.png');
             background-size: cover;
             background-position: center;
         }
-        .standard:hover {
+        .section-standard:hover {
             background-color: rgba(0, 0, 0, 0.5);
         }
-        .signature:hover {
+        .section-signature:hover {
             background-color: rgba(255, 215, 0, 0.5);
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="standard" onclick="location.href='standard.html'">
+        <div class="section section-standard" onclick="location.href='standard.html'">
             Demeter Standard
         </div>
-        <div class="signature" onclick="location.href='signature.html'">
+        <div class="section section-signature" onclick="location.href='signature.html'">
             Demeter Signature
         </div>
     </div>
